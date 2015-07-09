@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.itcast01.slidemenu.view.SlideMenu
+        android:id="@+id/slidemenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- include 是把一个布局文件引入到当前的控件中. -->
+
+        <include layout="@layout/slidemenu_menu" />
+
+        <include layout="@layout/slidemenu_main" />
+    </com.itcast01.slidemenu.view.SlideMenu>
+
+</RelativeLayout>
